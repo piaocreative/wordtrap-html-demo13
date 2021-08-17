@@ -1,0 +1,35 @@
+/* ----------------------------------------------------------------
+
+	Contact.scss
+
+-----------------------------------------------------------------*/
+#contact {
+	input,textarea {
+		border-color: #d6d7d8;
+	}
+
+	label {
+		color: #a2a2a2;
+		font-size: 0.875rem;
+		font-family: $body-font;
+		display: block;
+		margin-bottom: -1rem;
+	}
+
+	button {
+		font-size: 0.875rem;
+		padding: 1.5rem;
+		font-family: $body-font;
+
+		i {
+			font-size: 0.9rem;
+			margin-left: 0.5rem;
+		}
+	}
+
+	p {
+		font-size: 0.875rem;
+		line-height: 1.3rem;
+		color: #9f9f9f;
+	}
+}

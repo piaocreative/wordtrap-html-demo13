@@ -1,0 +1,263 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.link-icon {
+	background-image: url(../images/icons/link.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 2.5625rem;
+	height: 2.5625rem;
+
+	&.black {
+		background-image: url(../images/icons/link_black.png);
+	}
+}
+
+a {
+	.link-icon {
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	&:hover {
+		.link-icon {
+			@include translateX(1rem);
+		}
+	}	
+}
+
+.about-top, .about-main, .about-bottom {
+	border-color: #efefef;
+
+	p {
+		font-size: 0.875rem;
+		font-family: $body-font;
+		line-height: 1.5rem;
+		color: #6e6e6e;
+	}
+}
+
+.about-us-link {
+	a {
+		padding: 0.5rem 4rem;
+		background-color: $theme-color;
+		color: white;
+		text-decoration: none;
+		font-size: .75rem;
+		border-radius: 2rem;
+		display: inline-block;
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 1rem;
+	}
+}
+
+
+.about-content {
+	h3 {
+		font-size: 2.25rem;
+	}
+
+	p {
+		font-size: 0.75rem;
+		color: #9c9c9f;
+		line-height: 1.3rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		margin-top: 1rem !important;
+	}
+}
+
+.carousel-indicator {
+	margin-top: 4rem;
+
+	li {
+		list-style: none;
+		padding: 0rem;
+
+		i {
+			font-size: 0.5rem;
+			color: #d6d7d8;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		margin-top: 2rem;
+	}
+}
+
+.sale-banner {
+	padding: 1rem;
+
+	img {
+		width: 4rem;
+		height: 3.5rem;
+	}
+	
+	h4 {
+		font-size: 1.125rem;
+	}
+
+	p {
+		color: #4f4f4f;
+		line-height: 1.2rem;
+		font-weight: 0.875rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 1rem;
+	}
+}
+
+.shop-now-link {
+	text-decoration: none;
+    background-color: #c5562b;
+    font-size: .8rem;
+    color: #fff;
+    padding: 1.5rem 2.5rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-family: $body-font;
+	letter-spacing: 0.05rem;
+
+	i {
+		font-size: 0.9rem;
+		margin-left: 0.5rem;
+	}
+}
+
+// about check//
+.chef-details {
+	h5 {
+		font-weight: 600;
+	}
+
+	p {
+		font-size: 0.75rem;
+	}
+
+	div {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		border-color: #efefef;
+	}
+}
+
+// page decorations//
+.page-decoration {
+	position: absolute;
+	z-index: -1;
+
+	&.meat-2 {
+		right: 0;
+		top: 0;
+		width: 17rem;
+	}
+
+	&.plant {
+		bottom: 0;
+		left: 0;
+		width: 13rem;
+	}
+
+	&.peppers {
+		z-index: 1;
+		bottom: -8.7rem;
+    	width: 12rem;
+	}
+
+	&.sause {
+		top: -1.3rem;
+		right: 0rem;
+		width: 8rem;
+		z-index: 1;
+	}
+
+	@include media-breakpoint-down(lg) {
+		&.peppers {
+			bottom: -3.7rem;
+			width: 5rem;
+		}
+
+		&.plant {
+			width: 6rem;
+		}
+
+		&.sause {
+			width: 4rem;
+		}
+	}
+}
+
+// slider items//
+.slick-prev::before, .slick-next:before {
+	 font-size: 3rem;
+	 opacity: 1;
+	 color:#dcdcdc;
+
+	 @include media-breakpoint-down(lg) {
+		display: none;
+	}
+ }
+
+ .slick-prev {
+	 left:-10rem;
+
+	 @include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+ }
+
+ .slick-next {
+    right: -7rem;
+
+	@include media-breakpoint-down(lg) {
+		display: none !important;
+	}
+}
+
+ .slick-slide {
+    margin: 1rem;
+}
+
+.about-slick {
+	.slick-slide {
+		opacity: 0.3;
+		transition: opacity 0.3s;
+
+		&.slick-cloned {
+		opacity: 0.3;
+		transition: opacity 0.3s;
+		}
+
+		&.slick-current.slick-active {
+			opacity: 1;
+			transition: opacity 0.3s;
+		}
+	}
+
+	.slick-prev {
+		left:10rem;
+	}
+
+	.slick-next {
+	right: 14rem;
+	}
+}
