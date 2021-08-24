@@ -47,10 +47,10 @@
 -----------------------------------------------------------------*/
 
 .navbar-brand {
-
 	img {
-		width: 80%;
+		width: 85%;
 		height: auto;
+		margin-top: -0.7rem;
 	}
 }
 
@@ -60,7 +60,7 @@
 -----------------------------------------------------------------*/
 
 #primary-menu {
-	margin-left: 15rem;
+	margin-left: 13rem;
 
 	.nav-link {
 		color: $primary-menu-font-color;
