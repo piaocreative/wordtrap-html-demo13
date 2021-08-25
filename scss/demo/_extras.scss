@@ -107,8 +107,8 @@ a {
 	padding: 1rem;
 
 	img {
-		width: 4rem;
-		height: 3.5rem;
+		width: 5rem;
+		height: 4.5rem;
 	}
 	
 	h4 {
@@ -127,15 +127,16 @@ a {
 }
 
 .shop-now-link {
-	text-decoration: none;
-    background-color: #c5562b;
+    font-family: $body-font;
+    font-weight: 600;
     font-size: .8rem;
     color: #fff;
-    padding: 1.5rem 2.5rem;
-    border-radius: 1rem;
-    font-weight: 600;
-    font-family: $body-font;
 	letter-spacing: 0.05rem;
+    padding: 1.5rem 3rem;
+	display: inline-block;
+    background-color: #c5562b;
+    border-radius: 1rem;
+	text-decoration: none;
 
 	i {
 		font-size: 0.9rem;
@@ -234,7 +235,7 @@ a {
 }
 
  .slick-slide {
-    margin: 1rem;
+    margin: 0 1rem;
 }
 
 .about-slick {

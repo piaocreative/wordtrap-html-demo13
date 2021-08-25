@@ -48,9 +48,9 @@
 
 .navbar-brand {
 	img {
-		width: 85%;
+		width: 100%;
 		height: auto;
-		margin-top: -0.7rem;
+		margin-top: -1rem;
 	}
 }
 
@@ -136,7 +136,7 @@
 	.nav-item {			
 
 		@include media-breakpoint-up(lg) {
-			padding: .875rem;
+			padding: 1.125rem;
 		}
 	}
 

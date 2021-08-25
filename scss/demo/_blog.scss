@@ -30,14 +30,22 @@
 }
 
 .post-content {
-
 	.entry-title {
-		font-size: 1.75rem;
-		font-family: $heading-font;
-		font-weight: 400;
-		color: $white;
-		line-height: 2.5rem;
-		letter-spacing: 0.05rem;
+		a {
+			font-size: 1.75rem;
+			font-family: $heading-font;
+			font-weight: 400;
+			color: $white;
+			line-height: 2.5rem;
+			letter-spacing: 0.05rem;
+			text-decoration: none;
+			
+			&:hover {
+				color: $theme-color;
+				text-decoration: underline;
+			}
+		}
+
 	}
 
 	.entry-meta {
