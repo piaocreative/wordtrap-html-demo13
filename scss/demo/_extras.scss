@@ -112,13 +112,12 @@ a {
 	}
 	
 	h4 {
-		font-size: 1.125rem;
+		font-size: 1.25rem;
 	}
 
 	p {
 		color: #4f4f4f;
 		line-height: 1.2rem;
-		font-weight: 0.875rem;
 	}
 
 	@include media-breakpoint-down(lg) {

@@ -44,14 +44,14 @@
 	}
 
 	.category-quantity {
-		font-size: 0.875rem;
+		font-size: 1rem;
 		color: #8f8f8f;
 	}
 
 	.category-btn {
 		a {
 			text-decoration: none;
-			font-size: 0.875rem;
+			font-size: 1rem;
 			color: white;
 			width: 100%;
 			padding: 1.4rem 1.2rem;
@@ -116,7 +116,7 @@
 
 		del {
 			color: $secondary;
-			font-size: 1.125rem;
+			font-size: 1.3rem;
 			font-weight: 500;
 		}
 
@@ -130,7 +130,7 @@
 		margin-top: -0.3rem;
 		a {
 			color: #6a6a6a;
-			font-size: 0.875rem;
+			font-size: 1rem;
 			text-decoration: none;
 		}
 	}
@@ -145,7 +145,7 @@
 	}
 
 	.product-quantity {
-		font-size: 0.875rem;
+		font-size: 1rem;
 		color: #6a6a6a;
 		font-family: $body-font;
 	}
@@ -153,7 +153,7 @@
 	.product-rating {
 		line-height: 1;
 		color: $secondary;
-		font-size: 0.875rem;
+		font-size: 1rem;
 
 		span {
 			font-family: $body-font;
@@ -161,7 +161,7 @@
 
 		i {
 			color: #f6aa46;
-			font-size: 0.75rem;
+			font-size: 0.875rem;
 
 			&.empty {
 				color: rgba(#f6aa46, 0.5);
@@ -174,7 +174,6 @@
 	}
 
 	&:hover {
-
 		.product-image {
 			> a:nth-of-type(2) {
 				z-index: 1;
@@ -311,11 +310,12 @@
 			height: 100%;
 
 			p {
-				font-size: 0.875rem;
+				font-size: 1rem;
 				line-height: 1.5rem;
+				font-weight: 300;
 				color: $white;
 				font-family: $body-font;
-				letter-spacing: 0.1rem;
+				letter-spacing: 0.05rem;
 			}
 
 			a {
@@ -359,11 +359,11 @@
 	
 		.testimonials-details {
 			.testimonials-title {
-				font-size:1.325rem;
+				font-size: 1.25rem;
 			}
 
 			p {
-				font-size: .875rem;
+				font-size: 1rem;
 				color: #8f8f8f;
 				line-height: 1.5rem;
 				padding: 1rem 5rem 4rem;
