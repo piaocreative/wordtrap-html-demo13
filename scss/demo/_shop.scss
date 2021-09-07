@@ -109,8 +109,7 @@
 		color: $secondary;
 
 		span {
-			background-color: #bf4f4f;
-			padding: 0.2rem 0.5rem;
+			background-color: transparent;
 			border-radius: 0.5rem;
 		}
 
@@ -120,9 +119,8 @@
 			font-weight: 500;
 		}
 
-		sub {
+		sup {
 			font-size: 0.75rem;
-			margin: 0.3rem;
 		}
 	}
 
@@ -185,6 +183,14 @@
 			background-color: $theme-color;
 			border: 0;
 			color: white;
+		}
+
+		.product-price {
+			span {
+				background-color: #bf4f4f;
+				padding: 0.2rem 0.5rem;
+				color: $white;
+			}
 		}
 	}
 
@@ -293,7 +299,7 @@
 			border-radius: 1.5rem;
 
 			@include media-breakpoint-down(lg) {
-				height: 22rem;
+				height: 24rem;
 			}
 		}
 
@@ -344,7 +350,7 @@
 				}
 			}
 
-			@include media-breakpoint-down(sm) {
+			@include media-breakpoint-down(md) {
 				padding-left: 3rem;
 				padding-right: 3rem;
 			}

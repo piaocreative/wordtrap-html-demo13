@@ -14,7 +14,7 @@
 -----------------------------------------------------------------*/
 
 .heading-block { 
-	margin-bottom: 1.25rem; 
+	margin-bottom: 3rem; 
 	position: relative;
 
 	.sub-title-link {		
@@ -27,6 +27,7 @@
 		color: $secondary;
 		font-family: $heading-font;
 		font-weight: 400;
+		line-height: 1.2;
 
 	}
 
@@ -35,7 +36,7 @@
 	}
 
 	.attach-link {
-		font-size: 1.0625rem;
+		font-size: 1.125rem;
 		color:#acaeaf;
 		text-decoration: none;
 		font-family: $body-font;
