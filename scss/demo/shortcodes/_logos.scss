@@ -4,19 +4,16 @@
 	
 	.logo-item {
 		max-width: 6.625rem;
-		height: 4.25rem;
+		height: 5.25rem;
 		width: 100%;
 		display: flex !important;
 		align-items: center;
+		justify-content: center;
+		margin: auto;
 
 		img {
 			width: auto;
 			height: auto;
-		}
-
-		@include media-breakpoint-down(sm) {
-			margin-left: 0.5rem;
-			margin-right: 0.5rem;
 		}
 	}
 

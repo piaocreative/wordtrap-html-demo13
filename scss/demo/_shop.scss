@@ -299,7 +299,7 @@
 			border-radius: 1.5rem;
 
 			@include media-breakpoint-down(lg) {
-				height: 24rem;
+				height: 27rem;
 			}
 		}
 
@@ -362,7 +362,13 @@
 	.testimonials {
 		box-shadow: 0px 0px 30px 3px #f7f6f6;
 		border-radius: 1rem;
-	
+
+		.testimonials-image {
+			img {
+				width: 100%;
+			}
+		}
+
 		.testimonials-details {
 			.testimonials-title {
 				font-size: 1.25rem;
