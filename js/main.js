@@ -24,7 +24,6 @@ $( document ).ready( function() {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            dots: true
           }
         },
         {
@@ -58,7 +57,6 @@ $( document ).ready( function() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          dots: true
         }
       },
       {
@@ -92,7 +90,6 @@ $( document ).ready( function() {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          dots: false
         }
       },
       {
@@ -122,7 +119,7 @@ $( document ).ready( function() {
     lazyLoad: "ondemand",
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1250,
         settings: {
           slidesToShow: 1,
           centerMode: false

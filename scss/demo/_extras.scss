@@ -103,27 +103,6 @@ a {
 	}
 }
 
-.sale-banner {
-	padding: 1rem;
-
-	img {
-		height: 4.5rem;
-	}
-	
-	h4 {
-		font-size: 1.25rem;
-	}
-
-	p {
-		color: #4f4f4f;
-		line-height: 1.2rem;
-	}
-
-	@include media-breakpoint-down(lg) {
-		padding: 1rem;
-	}
-}
-
 .shop-now-link {
     font-family: $body-font;
     font-weight: 600;
@@ -178,8 +157,8 @@ a {
 
 	&.peppers {
 		z-index: 1;
-		bottom: -8.7rem;
-    	width: 12rem;
+		bottom: -6.7rem;
+		width: 9rem;
 	}
 
 	&.sause {
@@ -189,7 +168,7 @@ a {
 		z-index: 1;
 	}
 
-	@include media-breakpoint-down(lg) {
+	@include media-breakpoint-down(xl) {
 		&.peppers {
 			bottom: -3.7rem;
 			width: 5rem;
@@ -211,7 +190,7 @@ a {
 	 opacity: 1;
 	 color:#dcdcdc;
 
-	 @include media-breakpoint-down(lg) {
+	 @include media-breakpoint-down(xxl) {
 		display: none;
 	}
  }
@@ -219,7 +198,7 @@ a {
  .slick-prev {
 	 left:-10rem;
 
-	 @include media-breakpoint-down(lg) {
+	 @include media-breakpoint-down(xxl) {
 		display: none !important;
 	}
  }
@@ -227,7 +206,7 @@ a {
  .slick-next {
     right: -7rem;
 
-	@include media-breakpoint-down(lg) {
+	@include media-breakpoint-down(xxl) {
 		display: none !important;
 	}
 }

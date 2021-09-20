@@ -28,17 +28,6 @@
 		line-height: 5rem;
 	}
 
-	.sub-title {
-		font-weight: 500;
-		font-size: 0.875rem;
-		color: #7f7f7f;
-		font-family: $body-font;
-
-		i {
-			font-size: 0.4rem;
-		}
-	}
-
 	p {
 		font-size: 1rem;
 		line-height: 1.5rem;
@@ -49,19 +38,27 @@
 }
 
 .breadcrumb {
-	display: flex;
-	font-size: $h6-font-size;
-	padding: 0.625rem 0;
+	ul {
+		display: flex;
+		font-weight: 500;
+		font-size: 0.875rem;
+		font-family: $body-font;
+	
+		li {
+			padding: 0 0.625rem;
 
-	li {
-		padding: 0 0.625rem;
+			a {
+				color: #7f7f7f;
+				text-decoration: none;
 
-		&.active {
-			color: #ddcef5;
-		}
+				&.active {
+					color: $theme-color;
+				}
+			}
 
-		&:first-child {
-			padding-left: 0;
+			i {
+				font-size: 0.4rem;
+			}
 		}
 	}
 }
