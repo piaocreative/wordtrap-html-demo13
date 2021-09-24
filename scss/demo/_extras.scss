@@ -190,7 +190,7 @@ a {
 	 opacity: 1;
 	 color:#dcdcdc;
 
-	 @include media-breakpoint-down(xxl) {
+	 @include media-breakpoint-down(lg) {
 		display: none;
 	}
  }
@@ -198,7 +198,11 @@ a {
  .slick-prev {
 	 left:-10rem;
 
-	 @include media-breakpoint-down(xxl) {
+	 @media screen and (max-height : 1600px) {
+		 left: -2.5rem;
+	 }
+
+	 @include media-breakpoint-down(lg) {
 		display: none !important;
 	}
  }
@@ -206,7 +210,11 @@ a {
  .slick-next {
     right: -7rem;
 
-	@include media-breakpoint-down(xxl) {
+	@media screen and (max-height : 1600px) {
+		right: -0.5rem;
+	}
+
+	@include media-breakpoint-down(lg) {
 		display: none !important;
 	}
 }
