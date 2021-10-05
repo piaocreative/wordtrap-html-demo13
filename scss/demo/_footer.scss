@@ -23,8 +23,8 @@
 }
 
 #footer-top {
-	padding-top: 3rem;
-	padding-bottom: 2rem;
+	padding-top: 4rem;
+	padding-bottom: 3rem;
 	border-bottom: 1px solid #333333;
 
 	h2 {
@@ -36,7 +36,6 @@
 	p {
 		font-size: 0.875rem;
 		color: #606060;
-		font-family: $body-font;
 	}
 }
 
@@ -47,14 +46,8 @@
 
 	.navbar-brand {
 		img {
-			width: 30%;
+			width: 5.5rem;
 			margin-top: -1rem;
-
-			@include media-breakpoint-down(lg) {
-				width: 20%;
-				margin-top: 1rem;
-				margin-bottom: 1rem;
-			}
 		}
 	}
 }
@@ -68,7 +61,6 @@
 		font-weight: 500;	
 		line-height: 2;
 		z-index: 1;	
-		font-size: 1rem;
 	}
 }
 

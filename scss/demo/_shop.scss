@@ -29,6 +29,7 @@
 	.category-details {
 		padding: 1.875rem .875rem;
 	}
+
 	.category-image {
 		img {
 			width: 100%;
@@ -38,25 +39,21 @@
 	}
 
 	.category-title {
-		font-family: $heading-font;
 		font-weight: 700;
 		color: $secondary;
 	}
 
 	.category-quantity {
-		font-size: 1rem;
 		color: #8f8f8f;
 	}
 
 	.category-btn {
 		a {
 			text-decoration: none;
-			font-size: 1rem;
 			color: white;
 			width: 100%;
 			padding: 1.4rem 1.2rem;
-			font-family: $body-font;
-			letter-spacing: 0.1rem;
+			letter-spacing: 0.05rem;
 			font-weight: 600;
 		}
 
@@ -65,7 +62,6 @@
 			margin-left: 0.5rem;
 		}
 	}
-
 }
 
 /* Product
@@ -103,7 +99,6 @@
 
 	.product-price {
 		font-size: 1.5rem;
-		font-family: $body-font;
 		font-weight: 700;
 		line-height: 1;
 		color: $secondary;
@@ -126,36 +121,25 @@
 
 	.product-categories {
 		margin-top: -0.3rem;
+
 		a {
 			color: #6a6a6a;
-			font-size: 1rem;
-			text-decoration: none;
 		}
 	}
 
 	.product-title {
 		font-weight: 700;
-
-		a {
-			color: $secondary;
-			text-decoration: none;
-		}
 	}
 
 	.product-quantity {
 		font-size: 1rem;
 		color: #6a6a6a;
-		font-family: $body-font;
 	}
 
 	.product-rating {
 		line-height: 1;
 		color: $secondary;
 		font-size: 1rem;
-
-		span {
-			font-family: $body-font;
-		}
 
 		i {
 			color: #f6aa46;
@@ -181,7 +165,7 @@
 
 		.add-to-wishlist {
 			background-color: $theme-color;
-			border: 0;
+			border: none;
 			color: white;
 		}
 
@@ -196,7 +180,6 @@
 
 	.add-to-cart {
 		padding: .4rem 1.2rem;
-		font-family: $body-font;
 		font-size: 1.25rem;
 		border-radius: 0.5rem;
 		color: #fff;
@@ -237,7 +220,6 @@
 .onnew,
 .onhot,
 .onsale {
-	font-family: $body-font;
     font-size: .875rem;
     line-height: 1;
     font-weight: 500;
@@ -331,7 +313,6 @@
 				line-height: 1.5rem;
 				font-weight: 300;
 				color: $white;
-				font-family: $body-font;
 				letter-spacing: 0.05rem;
 			}
 
@@ -342,7 +323,6 @@
 				border-radius: .5rem;
 				color: #fff;
 				text-decoration: none;
-				font-family: $body-font;
 				font-weight: 600;
 				letter-spacing: 0.05rem;
 			}
@@ -401,7 +381,6 @@
 	.slick-slide {
 		opacity: 0.3;
 		transition: opacity 0.3s;
-		// width: 600px !important;
 
 		&.slick-cloned {
 		opacity: 0.3;

@@ -16,8 +16,4 @@
 			height: auto;
 		}
 	}
-
-	@include media-breakpoint-down(sm) {
-		padding: 0 !important;
-	}
 } 

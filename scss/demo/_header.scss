@@ -48,7 +48,7 @@
 
 .navbar-brand {
 	img {
-		width: 100%;
+		width: 5.5rem;
 		height: auto;
 		margin-top: -1rem;
 	}
@@ -60,8 +60,6 @@
 -----------------------------------------------------------------*/
 
 #primary-menu {
-	margin-left: 13rem;
-
 	.nav-link {
 		color: $primary-menu-font-color;
 		font-family: $body-font;
@@ -72,6 +70,9 @@
 	}
 
 	.nav-item {
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+
 		&:hover {
 			border-top: 1px solid $primary;
 			border-bottom: 1px solid $primary;
@@ -82,8 +83,8 @@
 		}
 	}
 
-	@include media-breakpoint-down(lg) {
-		margin-left: 0;
+	@include media-breakpoint-up(lg) {
+		margin-left: 13rem;
 	}
 }
 
@@ -101,12 +102,9 @@
 
 
 #top-btns {
-
 	.nav-item {
-		margin-right: 1rem;
-		
 		@include media-breakpoint-up(lg){
-			margin-bottom: 0;
+			margin-right: 1rem;
 		}
 	}
 
@@ -120,7 +118,7 @@
 		font-family: $body-font;
 
 		&:hover {
-			color: $primary;
+			color: $theme-color;
 		}
 	}
 }
@@ -134,7 +132,6 @@
 	margin-right: -15rem;
 
 	.nav-item {			
-
 		@include media-breakpoint-up(lg) {
 			padding: 1.125rem;
 		}
@@ -144,13 +141,8 @@
 		color: $topbar-color;
 		display: block;
 		font-size: 0.875rem;
-		font-family: $body-font;	
-
-		@include media-breakpoint-up(lg) {
-			padding: 0;	
-		}
+		font-family: $body-font;
 		
-
 		&:hover {
 			color: $topbar-hover-color;
 		}
@@ -207,62 +199,10 @@
 	Top Infos
 -----------------------------------------------------------------*/
 
-#top-infos {
-	display: flex;
-
-	.phone-number {
-		margin-right: 2.875rem;
-		
-		a {
-			color: $topbar-color;
-			margin-left: 1.75rem;
-
-			&:hover {
-				color: $topbar-hover-color;
-			}
-		}
-	}
-}
-
 
 /* ----------------------------------------------------------------
 	Top Social
 -----------------------------------------------------------------*/
-
-#top-social,
-#top-social ul { margin: 0; }
-
-#top-social {
-	ul {
-		display: flex;
-		align-items: center;
-	}
-
-	li {
-		padding: 0 0.25rem;
-
-		a {
-			background-color: rgba($topbar-color, 0.7);
-			border-radius: 50%;
-			color: rgba($topbar-hover-color, 0.7);
-			display: inline-block;
-			line-height: 1.8125rem;
-			width: 1.8125rem;
-			height: 1.8125rem;		
-			vertical-align: middle;
-			text-align: center;
-
-			&:hover {
-				color: $topbar-hover-color;
-			}
-
-			i {
-				vertical-align: top;
-				line-height: 1.8125rem;
-			}
-		}
-	}
-}
 
 
 /* ----------------------------------------------------------------
