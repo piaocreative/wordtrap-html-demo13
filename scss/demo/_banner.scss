@@ -16,10 +16,10 @@
 -----------------------------------------------------------------*/
 
 
-#banner {
+.banner {
     position: relative;
-
-    height: 38rem;
+    background-repeat: no-repeat;
+    background-position: center;
 
     img {
         width: 100%;
@@ -31,5 +31,10 @@
     .banner-wrap {
         padding-left: 4.375rem;
         padding-right: 4.375rem;
+    }
+
+    &#about-banner {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
     }
 }

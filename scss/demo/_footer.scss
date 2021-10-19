@@ -16,51 +16,27 @@
 
 #footer {
 	background-color: black;
-
-	a {
-		text-decoration: none !important;
-	}
-}
-
-#footer-top {
-	padding-top: 4rem;
-	padding-bottom: 3rem;
-	border-bottom: 1px solid #333333;
-
-	h2 {
-		font-size: 2.875rem;
-		font-family: $heading-font;
-		line-height: 3.5rem;
-	}
-	
-	p {
-		font-size: 0.875rem;
-		color: #606060;
-	}
 }
 
 #footer-main {
-	padding-top: 3rem;
-	padding-bottom: 2rem;
+	padding-top: 3.625rem;
+	padding-bottom: 3.375rem;
 	border-bottom: 1px solid #333333;
 
 	.navbar-brand {
 		img {
-			width: 5.5rem;
+			max-width: 5.5rem;
 			margin-top: -1rem;
 		}
 	}
 }
 
 #footer-bottom {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-
-	p {
-		color: #808080;
-		font-weight: 500;	
-		line-height: 2;
-		z-index: 1;	
-	}
+	padding-top: 2.25rem;
+	padding-bottom: 2.25rem;
 }
 
+.copyrights {
+	color: #8c8c8c;
+	line-height: 2;
+}

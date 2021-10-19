@@ -20,21 +20,21 @@ $( document ).ready( function() {
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 991,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
           }
         },
         {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
+          breakpoint: 767,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
@@ -53,21 +53,21 @@ $( document ).ready( function() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 991,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
@@ -86,23 +86,16 @@ $( document ).ready( function() {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1199,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 5,
           slidesToScroll: 1,
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 767,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1
         }
       }

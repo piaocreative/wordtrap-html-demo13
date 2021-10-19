@@ -10,88 +10,6 @@
 	Extra Styles
 -----------------------------------------------------------------*/
 
-.shipping-banner {
-	position: absolute;
-	left: 4.375rem;
-	top: 5.625rem;	
-}
-
-.container-fluid {
-	overflow: hidden;
-}
-
-.link-icon {
-	background-image: url(../images/icons/link.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	display: inline-block;
-	width: 2.5625rem;
-	height: 2.5625rem;
-
-	&.black {
-		background-image: url(../images/icons/link_black.png);
-	}
-}
-
-a {
-	.link-icon {
-		@include transition(all 0.3s ease-in-out);
-	}
-
-	&:hover {
-		.link-icon {
-			@include translateX(1rem);
-		}
-	}	
-}
-
-.about-us-link {
-	a {
-		padding: 0.5rem 4rem;
-		background-color: $theme-color;
-		color: white;
-		text-decoration: none;
-		font-size: .75rem;
-		border-radius: 2rem;
-		display: inline-block;
-	}
-
-	@include media-breakpoint-down(sm) {
-		margin-bottom: 1rem;
-	}
-}
-
-
-.about-content {
-	h3 {
-		font-size: 2.25rem;
-	}
-
-	p {
-		font-size: 0.75rem;
-		color: #9c9c9f;
-		line-height: 1.3rem;
-	}
-}
-
-.carousel-indicator {
-	margin-top: 4rem;
-
-	li {
-		list-style: none;
-		padding: 0rem;
-
-		i {
-			font-size: 0.5rem;
-			color: #d6d7d8;
-		}
-	}
-
-	@include media-breakpoint-down(sm) {
-		margin-top: 2rem;
-	}
-}
-
 .shop-now-link {
     font-weight: 600;
     font-size: 1rem;
@@ -110,69 +28,74 @@ a {
 }
 
 
-// page decorations//
-.page-decoration {
-	position: absolute;
-	z-index: -1;
+// decorations //
+.decoration {
+	position: relative;
 
-	&.meat-2 {
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: -1;
+	}
+
+	&.meat-1::after {
+		content: url(../images/meat1.png);
+		left: 0;
+	}
+	
+
+	&.meat-2::after {
+		content: url(../images/meat2.png);
 		right: 0;
 		top: 0;
-		width: 17rem;
 	}
 
-	&.plant {
-		bottom: 0;
+	&.plant::after {
+		content: url(../images/plant.png);
+		bottom: -6.25rem;
 		left: 0;
-		width: 13rem;
 	}
 
-	&.peppers {
-		z-index: 1;
+	&.peppers::before {
+		content: url(../images/peppers.png);
 		bottom: -6.7rem;
-		width: 9rem;
-	}
-
-	&.sause {
-		top: -1.3rem;
-		right: 0rem;
-		width: 8rem;
 		z-index: 1;
 	}
 
-	@include media-breakpoint-down(xl) {
-		&.peppers {
-			bottom: -3.7rem;
-			width: 5rem;
-		}
+	&.sause::after {
+		content: url(../images/sause.png);
+		top: -1.3rem;
+		right: 2.75rem;
+		z-index: 1;
+	}
+}
 
-		&.plant {
-			width: 6rem;
-		}
+.slick-slider {
+	z-index: 2;
 
-		&.sause {
-			width: 4rem;
-		}
+	.slick-slide {
+		margin: 0 0.9375rem;
 	}
 }
 
 // slider items//
 .slick-prev::before, .slick-next:before {
-	 font-size: 3rem;
-	 opacity: 1;
-	 color:#dcdcdc;
+	font-size: 3rem;
+	opacity: 1;
+	color:#dcdcdc;
 
-	 @include media-breakpoint-down(lg) {
+	@include media-breakpoint-down(lg) {
 		display: none;
 	}
  }
 
  .slick-prev {
-	 left:-10rem;
+	left: -10rem;
 
-	 @media (max-width : 1600px) {
-		 left: -2.5rem;
-	 }
+	@media (max-width : 1600px) {
+		left: -2.5rem;
+	}
  }
 
  .slick-next {
@@ -181,10 +104,6 @@ a {
 	@media (max-width : 1600px) {
 		right: -0.5rem;
 	}
-}
-
- .slick-slide {
-    margin: 0 1rem;
 }
 
 .slick-list {
@@ -197,8 +116,8 @@ a {
 		transition: opacity 0.3s;
 
 		&.slick-cloned {
-		opacity: 0.3;
-		transition: opacity 0.3s;
+			opacity: 0.3;
+			transition: opacity 0.3s;
 		}
 
 		&.slick-current.slick-active {
@@ -212,6 +131,6 @@ a {
 	}
 
 	.slick-next {
-	right: 14rem;
+		right: 14rem;
 	}
 }

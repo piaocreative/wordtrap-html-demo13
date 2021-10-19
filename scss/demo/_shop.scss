@@ -48,15 +48,6 @@
 	}
 
 	.category-btn {
-		a {
-			text-decoration: none;
-			color: white;
-			width: 100%;
-			padding: 1.4rem 1.2rem;
-			letter-spacing: 0.05rem;
-			font-weight: 600;
-		}
-
 		i {
 			font-size: 0.9rem;
 			margin-left: 0.5rem;
@@ -171,20 +162,23 @@
 
 		.product-price {
 			span {
-				background-color: #bf4f4f;
-				padding: 0.2rem 0.5rem;
+				background-color: #bf4f4f;			
 				color: $white;
-			}
+				padding: 0.2rem 0.5rem;
+
+				@include border-radius(0.5rem);
+			}			
 		}
 	}
 
 	.add-to-cart {
-		padding: .4rem 1.2rem;
-		font-size: 1.25rem;
-		border-radius: 0.5rem;
-		color: #fff;
-		font-weight: 700;
 		background-color: #3d3d3d;
+		color: #fff;
+		font-size: 1.25rem;		
+		font-weight: 700;
+		padding: .4rem 1.2rem;
+
+		@include border-radius(0.5rem);
 
 		&:hover {
 			background-color: $theme-color;
@@ -200,7 +194,7 @@
 		z-index: 3;
 		border: 1px solid white;
 		border-radius: .5rem;
-		color: #6d6d6d;
+		color: white;
 		font-size: 1.25rem;
 		line-height: 1;
 		width: 2.375rem;
@@ -263,9 +257,6 @@
 	right: 0;
 	color: #fe3362;
 }
-
-
-
 
 
 /* Ads
@@ -347,63 +338,4 @@
 			}
 		}
 	}
-}
-
-.testimonial-slick {
-	.testimonials {
-		box-shadow: 0px 0px 30px 3px #f7f6f6;
-		border-radius: 1rem;
-
-		.testimonials-image {
-			img {
-				width: 100%;
-			}
-		}
-
-		.testimonials-details {
-			.testimonials-title {
-				font-size: 1.25rem;
-			}
-
-			p {
-				font-size: 1rem;
-				color: #8f8f8f;
-				line-height: 1.5rem;
-				padding: 1rem 5rem 4rem;
-
-				@include media-breakpoint-down(sm) {
-					padding:0.5rem 1.5rem;
-				}
-			}
-		}
-	}
-
-	.slick-slide {
-		opacity: 0.3;
-		transition: opacity 0.3s;
-
-		&.slick-cloned {
-		opacity: 0.3;
-		transition: opacity 0.3s;
-		}
-
-		&.slick-current.slick-active {
-			opacity: 1;
-			transition: opacity 0.3s;
-		}
-	}
-
-	.slick-center {
-		-webkit-transform: scale(1.1);
-		-moz-transform: scale(1.1);
-		transform: scale(1.1);
-	}
-
-	.slick-prev {
-		left:10rem;
-	}
-   
-	.slick-next {
-	   right: 14rem;
-   }
 }

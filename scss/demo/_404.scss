@@ -4,34 +4,23 @@
 
 -----------------------------------------------------------------*/
 .error-404 {
+    background-image: url(../images/404/404_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
+    padding-top: 5.625rem;
+    padding-bottom: 3rem;
+}
 
-    .error-content {
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        height: 100%;
+#error-nav {
+    .nav-link {
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
 
-        .go-home {
-            padding: 1.5rem 3.5rem;
-
-            i {
-                font-size: 0.9rem;
-                margin-left: 0.5rem;
-            }
-        }
-    }
-
-    @include media-breakpoint-down(sm) {
-        .error-banner {
-            height: 22rem;
-        }
-    }
-
-    @include media-breakpoint-down(lg) {
-        .error-content {
-            top: 6rem;
+        &:hover {
+            border-top: 2px solid $primary;
+            border-bottom: 2px solid $primary;
         }
     }
 }

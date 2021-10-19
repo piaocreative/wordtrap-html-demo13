@@ -36,20 +36,16 @@
 	Sticky Header
 -----------------------------------------------------------------*/
 
-#header-wrap {
-	padding-left: 2.8125rem;
-	padding-right: 2.8125rem;
-}
-
 
 /* ----------------------------------------------------------------
 	Logo
 -----------------------------------------------------------------*/
 
 .navbar-brand {
+	margin-right: 1.5rem;
+
 	img {
-		width: 5.5rem;
-		height: auto;
+		max-width: 5.5rem;
 		margin-top: -1rem;
 	}
 }
@@ -61,30 +57,13 @@
 
 #primary-menu {
 	.nav-link {
-		color: $primary-menu-font-color;
-		font-family: $body-font;
-		font-size: $primary-menu-font-size;
-		font-weight: $primary-menu-font-weight;		
-		letter-spacing: $primary-menu-font-spacing;
-		text-transform: $primary-menu-font-tt;
-	}
-
-	.nav-item {
-		border-top: 1px solid transparent;
-		border-bottom: 1px solid transparent;
+		border-top: 2px solid transparent;
+		border-bottom: 2px solid transparent;
 
 		&:hover {
-			border-top: 1px solid $primary;
-			border-bottom: 1px solid $primary;
-
-			a {
-				color: $theme-color;
-			}
+			border-top: 2px solid $primary;
+			border-bottom: 2px solid $primary;
 		}
-	}
-
-	@include media-breakpoint-up(lg) {
-		margin-left: 13rem;
 	}
 }
 
@@ -129,25 +108,6 @@
 -----------------------------------------------------------------*/
 
 #top-links {
-	margin-right: -15rem;
-
-	.nav-item {			
-		@include media-breakpoint-up(lg) {
-			padding: 1.125rem;
-		}
-	}
-
-	a.nav-link {
-		color: $topbar-color;
-		display: block;
-		font-size: 0.875rem;
-		font-family: $body-font;
-		
-		&:hover {
-			color: $topbar-hover-color;
-		}
-	}
-
 	.dropdown-toggle {
 		&::after {
 			margin-left: .75em;
@@ -157,7 +117,7 @@
 	.dropdown-menu {
 		background: $white;
 		border: 0;
-		top: $topbar-line-height;
+		top: 3.375rem;
 		left: 0;
 		width: 100%;		
 		margin: 0;

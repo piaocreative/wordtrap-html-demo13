@@ -12,147 +12,136 @@
 
 //-------------------- Base Colors --------------------//
 
-$theme-color:                   #c5562b;
-$body-color:                    #000000;
-$heading-color:                 #3d3d3d;
-$third-color:                   #2e2e2e;
+$theme-color:                   	#c5562b;
+$body-color:                    	#000000;
+$heading-color:                 	#3d3d3d;
 // $body-bg:                       #f9f9f9;
 
 //-------------------- Redefine Bootstrap Variables ------------//
 
 // Theme Colors
-$primary:                     	$theme-color;
-$secondary:                   #3d3d3d;
-$success:                     #fafafa;
-$dark:                        black;
+$primary:                     		$theme-color;
+$secondary:                   		#3d3d3d;
+$success:                     		#fafafa;
+$dark:                        		black;
 
 
 //-------------------- Font Families --------------------//
-$body-font:                   'Nunito', sans-serif;
-
-$heading-font:                'Playfair Display', serif;
+$body-font:							'Nunito', sans-serif;
+$heading-font:                		'Playfair Display', serif;
 
 
 // Font sizes
-$h1-font-size:                	5rem;
-$h2-font-size:                	3.75rem;
-$h3-font-size:                	2.5rem;
-$h4-font-size:                	1.5rem;
-$h5-font-size:                	1.25rem;
-$h6-font-size:               	0.875rem;
-
-$grid-gutter-width:             3rem;
-
-// border//
-$border-radius:               	1rem;
-$border-radius-sm:            	2rem;
-$border-radius-lg:            	3rem;
-$border-radius-pill:          	50rem;
+$h1-font-size:                		5rem;
+$h2-font-size:                		3.75rem;
+$h3-font-size:                		2.5rem;
+$h4-font-size:                		1.875rem;
+$h5-font-size:                		1.25rem;
+$h6-font-size:               		0.875rem;
 
 
-//-------------------- Top Bar --------------------//
+// line height
+$line-height-base:					1.5;
+$line-height-sm:					1.25;
+$line-height-lg:					2;
 
-$topbar-color:                  #ddcef5;
-$topbar-hover-color:            #ddcef5;
+
+// Gutter Width
+$grid-gutter-width:             	1.875rem;
 
 
-//-------------------- Top Bar --------------------//
+// Navbar
+$navbar-padding-y:					1.75rem;
+$navbar-nav-link-padding-x:         1rem;
 
-$topbar-height:                 2.8125rem;
-$topbar-line-height:            2.75rem;
-$topbar-color:                #adacac;
-$topbar-hover-color:          #7c7b7a;
+$navbar-toggler-border-radius:      0;
 
-//-------------------- Primary Menu --------------------//
+$navbar-light-color:                #3d3d3d;
+$navbar-light-hover-color:          #c5562b;
 
-$primary-menu-padding:			0.5rem;
-$sticky-menu-padding:			1.40625rem;
+// Navs
+$nav-link-padding-y:                1rem;
+$nav-link-color:                    #3d3d3d;
+$nav-link-hover-color:              #c5562b;
 
-$primary-menu-font:             $body-font;
-$primary-menu-font-weight:      400;
-$primary-menu-font-size:        1rem;
-$primary-menu-font-tt:          initial;
-$primary-menu-font-color:     #404040;
-$primary-menu-font-spacing:     0;
 
-$header-height:                 6.5rem;
+// Border
+$border-radius:               		1rem;
+$border-radius-sm:            		2rem;
+$border-radius-lg:            		3rem;
+$border-radius-pill:          		50rem;
+
+
+// Forms
+$input-color:                   	#8f8f8f;
+$input-border-color:            	#333333;
+$input-border-width:				0;
+$input-btn-focus-color-opacity:		1;
+
+$input-btn-padding-y:            	0.8rem;
+$input-btn-padding-x:            	0.8rem;
+$input-btn-font-size:            	0.75rem;
+
+$input-btn-padding-y-sm:         	0.67rem;
+$input-btn-padding-x-sm:         	1.5rem;
+$input-btn-font-size-sm:         	0.75rem;
+
+$input-btn-padding-y-lg:         	1.33rem;
+$input-btn-padding-x-lg:         	1.67rem;
+$input-btn-font-size-lg:         	1.17rem;
+
+$input-btn-line-height:          	1;
+
+$input-btn-focus-width:          	1px;
+$input-focus-border-color:       	$theme-color;
+
+$input-border-radius:            	0;
+$input-border-radius-sm:         	1rem;
+$input-border-radius-lg:         	1.83rem;
+
+$input-font-weight:				 	300;
+$input-focus-box-shadow:		 	none;
+$input-placeholder-color:       	#606060;
+
+
+// Buttons
+$btn-font-family:                	$body-font;
+
+$btn-padding-y:                  	1.375rem;
+$btn-padding-x:                  	1.875rem;
+$btn-font-size:                  	1rem;
+
+$btn-padding-y-sm:               	0.5rem;
+$btn-padding-x-sm:               	1.5rem;
+$btn-font-size-sm:               	0.583rem;
+
+$btn-padding-y-lg:               	2rem;
+$btn-padding-x-lg:               	4rem;
+$btn-font-size-lg:               	1rem;
+
+$btn-link-color:              		#ffffff;
+
+$btn-font-weight:                	700;
+$btn-line-height:                	1;
+
+$btn-border-width:               	1px;
+
+$btn-border-radius:              	1rem;
+$btn-border-radius-sm:           	0.5rem;
+$btn-border-radius-lg:           	1rem;
+
+
+//-------------------- Header --------------------//
+
+$header-height:						7.625rem;
 
 // Sticky Header
-$sticky-header-height:          5.625rem;
-
-
-// top Button
-$top-btn-font-size:        		1rem;
-$top-btn-font-color:       	  #ffffff;
+$sticky-header-height:				5.25rem;
 
 
 //-------------------- Section --------------------//
 
-$section-spacer:				4.5rem;
-
-
-
-// Forms
-$input-color:                   #8f8f8f;
-$input-border-color:            #333333;
-$input-border-width:			  0px;
-$input-btn-focus-color-opacity:  1;
-
-$input-btn-padding-y:            0.8rem;
-$input-btn-padding-x:            2.5rem;
-$input-btn-font-size:            0.75rem;
-
-$input-btn-padding-y-sm:         0.67rem;
-$input-btn-padding-x-sm:         1.5rem;
-$input-btn-font-size-sm:         0.75rem;
-
-$input-btn-padding-y-lg:         1.33rem;
-$input-btn-padding-x-lg:         1.67rem;
-$input-btn-font-size-lg:         1.17rem;
-
-$input-btn-line-height:          1;
-
-$input-btn-focus-width:          1px;
-$input-focus-border-color:       $theme-color;
-
-$input-border-radius:            0rem;
-$input-border-radius-sm:         1rem !important;
-$input-border-radius-lg:         1.83rem;
-
-$input-font-weight:				 300;
-$input-focus-box-shadow:		 0 0 0 1px #e5e8e8;
-$input-placeholder-color:       #606060;
-
-
-// Buttons
-$btn-font-family:                $body-font;
-
-$btn-padding-y:                  1.5rem;
-$btn-padding-x:                  1.5rem;
-$btn-font-size:                  0.75rem;
-
-$btn-padding-y-sm:               0.5rem;
-$btn-padding-x-sm:               1.5rem;
-$btn-font-size-sm:               0.583rem;
-
-$btn-padding-y-lg:               1.5rem;
-$btn-padding-x-lg:               5.33rem;
-$btn-font-size-lg:               1.17rem;
-
-$btn-font-weight:                500;
-$btn-line-height:                1;
-
-$btn-border-width:               1px;
-
-$btn-border-radius:              1rem;
-$btn-border-radius-sm:           0.5rem;
-$btn-border-radius-lg:           1.83rem;
-
-// line height//
-$line-height-base:               1.5;
-$line-height-sm:                 1.25;
-$line-height-lg:                 2;
-
+$section-spacer:					3.375rem;
 
 
 

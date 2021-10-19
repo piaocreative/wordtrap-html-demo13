@@ -38,7 +38,7 @@
 
         <!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header">
+		<header id="header">
 
             <div id="header-wrap">
 
@@ -48,7 +48,7 @@
 
                         <!-- Logo
                         ============================================= -->
-                        <a href="index.html" class="navbar-brand m-0" data-dark-logo="images/logo.png">
+                        <a href="index.html" class="navbar-brand" data-dark-logo="images/logo.png">
                             <img src="images/logo.png" alt="Saler Logo">
                         </a>
                         
@@ -64,66 +64,52 @@
 
                             <!-- Top Links
                             ============================================= -->
-                            <div id="top-links">
+                            <ul class="nav navbar-nav" id="top-links">
 
-                                <ul class="nav navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/icons/flags/gb.png" alt="French" class="me-1">En</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
+                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+                                        <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
+                                    </ul>
+                                </li>
 
-                                    <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="images/icons/flags/gb.png" alt="French" class="me-1">En</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#" class="dropdown-item"><img src="images/icons/flags/french.png" alt="French"> FR</a></li>
-                                            <li><a href="#" class="dropdown-item"><img src="images/icons/flags/italian.png" alt="Italian"> IT</a></li>
-                                            <li><a href="#" class="dropdown-item"><img src="images/icons/flags/german.png" alt="German"> DE</a></li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-
-                            </div><!-- .top-links -->
+                            </ul><!-- .top-links -->
 
                             <!-- Primary Navigation
                             ============================================= -->
-                            <nav id="primary-menu">
-
-                                <ul class="navbar-nav gap-4">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Home</a>
-                                    </li>                                  
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">About Us</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle">Our Products</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Our News</a>
-                                    </li>                                    
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link">Contacts</a>
-                                    </li>
-                                </ul>                                
-
-                            </nav><!-- #primary-menu -->
+                            <ul class="navbar-nav" id="primary-menu">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Home</a>
+                                </li>                                  
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle">Our Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Our News</a>
+                                </li>                                    
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Contacts</a>
+                                </li>
+                            </ul><!-- #primary-menu -->
 
                             <!-- Top Buttons
-                            ============================================= -->
-                            <div id="top-btns">
-                                
-                                <ul class="navbar-nav flex-row gap-2 align-items-center">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="far fa-user"></i></a>
-                                    </li>
-                                    
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="fab fa-bitbucket"></i></a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
-                                    </li>
-                                </ul>
-
-                            </div><!-- #top-btns -->
+                            ============================================= -->                                
+                            <ul class="navbar-nav flex-row gap-2 align-items-center" id="top-btns">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+                                </li>                                    
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><i class="fab fa-bitbucket"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link"><i class="far fa-heart"></i></a>
+                                </li>
+                            </ul><!-- #top-btns -->
 
                         </div><!-- Navbar Collapse -->
 
@@ -144,20 +130,20 @@
                 <div class="section">
                     
                     <div class="container">
+
+                        <div class="breadcrumb mb-4 d-flex align-items-center gap-2">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><i class="fas fa-circle text-primary"></i></li>
+                                <li><a href="#" class="active">Contact Us</a></li>
+                            </ul>
+                        </div>
                         
                         <div class="row align-items-end mb-2">
 
                             <div class="col-lg-4">
 
-                                <div id="page-title" class="position-relative mb-2">
-            
-                                    <div class="breadcrumb mb-4 d-flex align-items-center gap-2">
-                                        <ul>
-                                            <li><a href="#">Home</a></li>
-                                            <li><i class="fas fa-circle text-primary"></i></li>
-                                            <li><a href="#" class="active">Contact Us</a></li>
-                                        </ul>
-                                    </div>
+                                <div id="page-title">                                               
 
                                     <h1 class="title">Contact Us</h1>
             
@@ -239,36 +225,36 @@
 
                         <div class="row">
 
-                            <div class="col-lg-6">
-                                <h2 class="secondary h1 heading-font fw-normal mb-2">Send Message</h2>
-                                <div class="col-lg-9">
-                                    <p class="fs-6 lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
-                                </div>
+                            <div class="col-lg-5">
+
+                                <h2 class="secondary h1 heading-font fw-normal mb-2">Send Message</h2>                                
+                                <p class="fs-6 lh-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+
                             </div>
                             
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 offset-lg-1">
                                 
-                                <form action="#" id="contact">
-                                    <div class="row g-2 align-items-center">
-                                        <div class="col-lg-12 col-md-6">
-                                            <label for="contactName">Name</label>
-                                            <input type="text" class="form-control border-bottom" id="contactName">
-                                        </div>
-                                        <div class="col-lg-12 col-md-6">
-                                            <label for="contactEmail">E-mail</label>
-                                            <input type="email" class="form-control border-bottom" id="contactEmail">
-                                        </div>
-                                        
-                                        <div class="col-md-4">
-                                            <button type="submit" class="btn btn-primary w-100 col-md-4 fw-bold text-white text-uppercase">Go home<i class="fas fa-angle-right"></i></button>
-                                        </div>
+                                <form action="#" id="contact-form" class="row align-items-center">
 
-                                        <div class="col-md-6 ms-2">
-                                            <p class="mb-0 fs-6">Or Just e-mail on</p>
-                                            <h5 class="text-primary m-0 body-font fw-bold">hello@saler.com</h5>
-                                        </div>
-
+                                    <div class="col-lg-12 col-md-6 mb-4">
+                                        <label for="contactName">Name</label>
+                                        <input type="text" class="form-control border-bottom" id="contactName">
                                     </div>
+
+                                    <div class="col-lg-12 col-md-6 mb-4">
+                                        <label for="contactEmail">E-mail</label>
+                                        <input type="email" class="form-control border-bottom" id="contactEmail">
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-primary w-100 text-white text-uppercase">Go home <i class="fas fa-angle-right"></i></button>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <p class="mb-0 fs-6">Or Just e-mail on</p>
+                                        <h5 class="text-primary m-0 body-font fw-bold">hello@saler.com</h5>
+                                    </div>
+
                                 </form>
 
                             </div>
@@ -304,10 +290,9 @@
 
                             <div class="widget widget-custom-html mt-2">
                                 <div class="widget-content">
-                                    <p class="widget-title">Consultation on the order:</p>
+                                    <h3 class="widget-title">Consultation on the order:</h3>
                                     <a href="callto:1234567890" class="mb-2 text-white fs-4">8 880 779 32 12</a>
-                                    <p>Monday – Saturday:<br>
-                                        08:00 – 20:00</p>
+                                    <p>Monday – Saturday:<br>08:00 – 20:00</p>
                                 </div>                                    
                             </div>
 
@@ -316,17 +301,16 @@
                         <div class="col-md-6 col-lg-3 text-center text-lg-start">
 
                             <div class="widget widget-custom-html">
-                                <p class="widget-title text-white">Store Location</p>
+                                <h3 class="widget-title text-white">Store Location</h3>
                                 <div class="widget-content">
                                     <p>98796 Canada, October st. 6</p>
                                 </div>                            
                             </div>
 
                             <div class="widget widget-custom-html">
-                                <p class="widget-title text-white">Work time</p>
+                                <h3 class="widget-title text-white">Work time</h3>
                                 <div class="widget-content">
-                                    <p>Monday – Saturday:<br>
-                                        08:00 – 20:00</p>
+                                    <p>Monday – Saturday:<br>08:00 – 20:00</p>
                                 </div>                            
                             </div>
 
@@ -384,22 +368,20 @@
                 ============================================= -->
                 <div id="footer-bottom">
 
-                    <div class="py-3 d-lg-flex justify-content-between align-items-center text-center">
-                        <p class="mb-lg-0">Copyrights &copy; 2020 FoodSite</p>
+                    <div class="d-lg-flex justify-content-between align-items-center text-center">
+                        <div class="copyrights">Copyrights &copy; 2021 Saler</div>
     
-                        <div class="col-lg-2">
-                            <div class="widget widget-payment mb-lg-0">
-                                <div class="widget-content">
-                                    <div class="payments d-flex justify-content-center">
-                                        <span class="payment-icon"><img src="images/payments/visa.png" alt="Visa" class="img-fluid"></span>
-                                        <span class="payment-icon"><img src="images/payments/m.png" alt="Mastercard" class="img-fluid"></span>
-                                        <span class="payment-icon"><img src="images/payments/paypal.png" alt="Paypal" class="img-fluid"></span>
-                                    </div>                                    
-                                </div>
+                        <div class="widget widget-payment mb-lg-0">
+                            <div class="widget-content">
+                                <div class="payments d-flex justify-content-center">
+                                    <span class="payment-icon"><img src="images/payments/visa.png" alt="Visa" class="img-fluid"></span>
+                                    <span class="payment-icon"><img src="images/payments/m.png" alt="Mastercard" class="img-fluid"></span>
+                                    <span class="payment-icon"><img src="images/payments/paypal.png" alt="Paypal" class="img-fluid"></span>
+                                </div>                                    
                             </div>
                         </div>
 
-                        <p class="mt-5 mt-lg-0">All Rights Reserved</p>
+                        <div class="copyrights">All Rights Reserved</div>
                     </div>
 
                 </div><!-- #footer-bottom -->
